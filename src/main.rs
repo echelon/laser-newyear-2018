@@ -53,7 +53,7 @@ impl Cycle {
   }
 }
 
-fn main() {
+fn new_main() {
   let mut dac = find_first_etherdream_dac().expect("Unable to find DAC");
 
   let mut i = 0;
@@ -81,8 +81,7 @@ fn main() {
   }).expect("DAC is broken");
 }
 
-/*
-fn old_main() {
+fn main() {
   let mut filename = String::new();
   let mut show_blanking = false;
   let mut frame_repeat_number = 50u8;
@@ -118,38 +117,8 @@ fn old_main() {
 
   let mut letters : Vec<Vec<PipelinePoint>> = Vec::new();
 
-  letters.push(letters::letter_a());
-  letters.push(letters::letter_t());
-  letters.push(letters::letter_l());
-  letters.push(letters::letter_a());
-  letters.push(letters::letter_n());
-  letters.push(letters::letter_t());
-  letters.push(letters::letter_a());
-
-  letters.push(letters::letter_b());
-  letters.push(letters::letter_e());
-  letters.push(letters::letter_l());
-  letters.push(letters::letter_t());
-  letters.push(letters::letter_l());
-  letters.push(letters::letter_i());
-  letters.push(letters::letter_n());
-  letters.push(letters::letter_e());
-
-  letters.push(letters::letter_l());
-  letters.push(letters::letter_a());
-  letters.push(letters::letter_n());
-  letters.push(letters::letter_t());
-  letters.push(letters::letter_e());
-  letters.push(letters::letter_r());
-  letters.push(letters::letter_n());
-
-  letters.push(letters::letter_p());
-  letters.push(letters::letter_a());
-  letters.push(letters::letter_r());
-  letters.push(letters::letter_a());
-  letters.push(letters::letter_d());
-  letters.push(letters::letter_e());
-
+  letters.push(letters::date_2018());
+  //letters.push(letters::letter_t());
 
   let mut current_index = 0;
 
@@ -221,7 +190,7 @@ fn old_main() {
 
     buf
   }).expect("Streaming to the DAC is broken.");
-}*/
+}
 
 // TODO: These definitely belong in beam.
 fn x_rotate(point: &mut PipelinePoint, theta: f32) {
