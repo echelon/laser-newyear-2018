@@ -178,11 +178,13 @@ fn main() {
 
       let mut pipeline_point = point.clone();
 
-      let rot = get_rotation(2);
+      let rot = get_rotation(4);
+      let rot2 = get_rotation(4);
+      let rot3 = get_rotation(16);
 
-      //x_rotate(&mut pipeline_point, rot);
-      y_rotate(&mut pipeline_point, rot);
-      //z_rotate(&mut pipeline_point, rot);
+      z_rotate(&mut pipeline_point, rot3);
+      x_rotate(&mut pipeline_point, rot);
+      //y_rotate(&mut pipeline_point, rot2);
 
       let dac_point = pipeline_to_dac(&pipeline_point);
       buf.push(dac_point);
