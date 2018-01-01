@@ -1,0 +1,15 @@
+[package]
+  authors = [ "Brandon Thomas <bt@brand.io>", "Brandon Thomas <echelon@gmail.com>" ]
+  description = "A demo for the NYE 2017 -> 2018"
+  license = "None at the moment"
+  name = "newyear-2018"
+  readme = "README.md"
+  repository = "https://github.com/echelon/laser-newyear-2018"
+  version = "0.1.0"
+
+[dependencies]
+  argparse = "0.2"
+  beam = "0.1"
+  lase = "0.0.1"
+  point = "0.3.*"
+  time = "0.1"
